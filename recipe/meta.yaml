@@ -10,7 +10,7 @@ source:
   sha256: 3289dc3ce79ec49105c066d1772f60b4db2a97aa1f9647af6aeedd951d6a968f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
@@ -23,14 +23,14 @@ requirements:
     - pkg-config
     - doxygen
   host:
-    - boost
+    - libboost-python-devel
     - crocoddyl
     - proxsuite
     - eigen
     - eigenpy
     - python
   run:
-    - boost
+    - libboost-python-devel
     - python
     - {{ pin_compatible('numpy') }}
 
