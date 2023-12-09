@@ -58,5 +58,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - jcarpent
     - ajordana
     - ymontmarin
