@@ -236,5 +236,6 @@ Feedstock Maintainers
 =====================
 
 * [@ajordana](https://github.com/ajordana/)
+* [@jcarpent](https://github.com/jcarpent/)
 * [@ymontmarin](https://github.com/ymontmarin/)
 
