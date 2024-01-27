@@ -1,5 +1,5 @@
 {% set name = "mim-solvers" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/machines-in-motion/mim_solvers/releases/download/v{{ version }}/mim_solvers-{{ version }}.tar.gz
-  sha256: d11d820a05366500631df1c51245eaaab110084bc0ea611efa4dd09bba42509f
+  sha256: 4dcc0a44b6c765316df8afd02eb4fa9ff0a5b361315655a2e5f94a833f5c6a31
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
