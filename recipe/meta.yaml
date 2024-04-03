@@ -1,5 +1,5 @@
 {% set name = "mim-solvers" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/machines-in-motion/mim_solvers/releases/download/v{{ version }}/mim_solvers-{{ version }}.tar.gz
-  sha256: 4dcc0a44b6c765316df8afd02eb4fa9ff0a5b361315655a2e5f94a833f5c6a31
+  sha256: 2b63bae95ba3d57a181ab38ec0637275d51e525bde0837b08489903750593a77
   patches:
     - patches/flag_benchmark.patch
 
