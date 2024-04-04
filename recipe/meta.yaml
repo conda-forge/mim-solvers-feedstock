@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/machines-in-motion/mim_solvers/releases/download/v{{ version }}/mim_solvers-{{ version }}.tar.gz
   sha256: 2b63bae95ba3d57a181ab38ec0637275d51e525bde0837b08489903750593a77
-  patches:
-    - patches/flag_benchmark.patch
 
 build:
   number: 0
