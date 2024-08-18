@@ -30,6 +30,7 @@ requirements:
     - libboost-python-devel
     - crocoddyl
     - proxsuite
+    - openmp
     - eigen
     - eigenpy
     - python
