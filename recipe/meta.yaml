@@ -14,6 +14,9 @@ build:
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name|lower, max_pin='x.x.x') }}
+  missing_dso_whitelist:
+    - lib/libgomp.so.1   # [linux]
+    - lib/libomp.dylib   # [osx]
 
 requirements:
   build:
@@ -30,7 +33,6 @@ requirements:
     - libboost-python-devel
     - crocoddyl
     - proxsuite
-    - openmp
     - eigen
     - eigenpy
     - python
